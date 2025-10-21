@@ -7,9 +7,11 @@ const BookByTitle = ({ title }) => {
   
   console.log(data);
 
-  return data ? (
+  return data ?  (
     <div>
       <h2>{data.title}</h2>
+      <p>Author: {data.author}</p>
+      <p>Release Year: {data.year}</p>
     </div>
   ) : (
     loading && <p>Loading...</p>
